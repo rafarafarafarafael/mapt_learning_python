@@ -45,3 +45,12 @@ mySet.add(2)
 mySet.add(3)
 mySet.add(4)
 print(mySet)
+
+# Sets are not ordered, so trying to access an index returns an error
+try:
+    mySet[0]
+except TypeError as t:
+    print(t)
+
+# And sets are good for testing membership as they are faster than lists
+print(5 in mySet)
